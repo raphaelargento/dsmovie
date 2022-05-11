@@ -1,26 +1,70 @@
+/* Importação das fontes do Google utilizadas no projeto */
 @import url(@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'););
 
+/* Variáveis */
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4D41C0;
+    --white: #fff;
+}
+
+/* Tags sendo modificadas pelo CSS */
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body{
-    background-color: #ddd;
+/* Retira a margem que existe sob cada texto dos títulos */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
 }
 
-nav{
+html, body {
+    background-color: var(--bg-gray);
+}
+
+/* Barra superior, BG */
+header {
+    background-color: #4D41C0;  /* O lance da variável de cor não funcionou pra mim. */
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Barra superior com texto (alinhamento dos elementos) */
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header{
-    background-color: #4D41C0;
-    color: white;
+/* Estiliza a tag <h1> que está dentro da tag <nav> */
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-a, a:hover{
+/* Estiliza a tag <a> que está dentro de <nav> */
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* Links modificados (branco e sem o sublinhado) */
+a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+/* Modificação da classe div criada no html */
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
 }
