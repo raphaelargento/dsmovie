@@ -74,7 +74,7 @@ a, a:hover {
 
 /* Isso é um id. Espaçamento dos cards em relação à página */
 #dsmovie-card-list {
-    padding: 40px 0;
+    padding: 40px 10px;
 }
 
 /* Cards com os filmes */
@@ -101,13 +101,13 @@ a, a:hover {
     border-radius: 0 0 8px 8px;
     min-height: 150px;
     justify-content: space-between; /* alinhamento do botão com a parte inferior do card */
-    height: 220px;
+    height: 190px;
 }
 
 .dsmovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
