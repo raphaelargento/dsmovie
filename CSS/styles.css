@@ -121,3 +121,8 @@ a, a:hover {
     border-radius: 4px;
 }
 
+/* Estilos do formulário */
+.dsmovie-form-container {
+    padding: 40px 0; /* Espaçamento interno. Valores verticais e horizontais */
+    max-width: 480px;
+}
